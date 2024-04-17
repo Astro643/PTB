@@ -2,7 +2,7 @@
 *Astro643
 *04.08.24
 *PokemonT.h
-*v0.1
+*v0.2
 **/
 
 //pragma once
@@ -39,7 +39,12 @@ class PokemonT{
 	void setName(std::string n);
 	void setTypeOne(TypeT tO);
 	void setTypeTwo(TypeT tT);
+	void setTypes(TypeT tO, TypeT tT);
+	void setTypeOne(std::string tO);
+	void setTypeTwo(std::string tT);
+	void setTypes(std::string tO, std::string tT);
 	void setNature(NatureT n);
+	void setNature(std::string n);
 	void setHP(int h);
 	void setLvl(int l);
 	void setAtk(int a);

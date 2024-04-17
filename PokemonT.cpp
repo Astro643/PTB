@@ -2,7 +2,7 @@
 *Astro643
 *04.08.24
 *PokemonT.cpp
-*v0.1
+*v0.2
 **/
 
 //headers
@@ -54,8 +54,30 @@ void PokemonT::setTypeTwo(TypeT tT){
 	typeTwo = tT;
 }
 
+void PokemonT::setTypes(TypeT tO, TypeT tT){
+	setTypeOne(tO);
+	setTypeTwo(tT);
+}
+
+void PokemonT::setTypeOne(string tO){
+	typeOne = string_to_TypeT(tO);
+}
+
+void PokemonT::setTypeTwo(string tT) {
+	typeTwo = string_to_TypeT(tT);
+}
+
+void PokemonT::setTypes(string tO, string tT) {
+	setTypeOne(tO);
+	setTypeTwo(tT);
+}
+
 void PokemonT::setNature(NatureT n){
 	nature = n;
+}
+
+void PokemonT::setNature(string n){
+	nature = string_to_NatureT(n);
 }
 
 void PokemonT::setHP(int h){
